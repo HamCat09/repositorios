@@ -4,10 +4,11 @@
 int main()
 {
     int num,i,su=1,acum,m1,m2;
-    for (i = 0; i < 10; i++)
+    while(i<10)
     {
         printf("Ingresa Los Numeros\n");
         scanf("%i",&num);
+        i++;
         if (num > m1)
         {
             m1 = num;
