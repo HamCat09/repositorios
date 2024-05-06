@@ -4,11 +4,16 @@
 #include <math.h>
 int main()
 {
-    int pot,numero,result;
-    printf("Ingresa Un Numero\n");
-    scanf("%i",&numero);
-    printf("Ingresa Una Potencia\n");
-    scanf("%i",&pot);
-    result= pow(numero,pot);
-    printf("Tu Numero Elevado A La Potencia:%i",result);
+    int p,n,r=1,i;
+        printf("Ingresa Un Numero\n");
+        scanf("%i",&n);
+        printf("Ingresa Una Potencia\n");
+        scanf("%i",&p);
+    for (i = 0; i < p ; i++)
+    {
+         r *= p;
+    }
+    printf("Tu Numero Elevado A La Potencia: %i",r);
+    
+    
 }
