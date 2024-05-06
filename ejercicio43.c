@@ -14,12 +14,17 @@ int main()
                 printf("BIENVENIDO AL SISTEMA\n");
                 cont =4;
             }
-            cont= cont+1;
+            cont++;
         }
-        if(contr==5)
+        while (cont<3);
         {
-            printf("INTENTOS AGOTADOS");
+            if (cont==3)
+            {
+                printf("Numero De Intentos Agotados :(");
+            }
+            
         }
+        
         
         return 0;
 }
