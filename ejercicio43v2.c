@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int conta,list;
+    int conta,list,ctd,arti,total,precio;
     char nom[50];
-    char cont = '5bm';
+    char cont[50] = "5bm";
     char contr[50];
-    while (cont<=3 || cont==0)
+    while (ctd=0)
     {
         printf("Ingresa Tu Nombre\n");
         scanf("%s",&nom);
@@ -13,20 +13,23 @@ int main()
         scanf("%i",&list);
         printf("Ingresa la contraseña\n");
         scanf("%s",&contr);
-        if (contr != cont)
+        if (contr == cont)
         {
             printf("BIENVENIDO AL SISTEMA\n");
-            cont = 3;
         }
-        conta++;
-        }
-        while (cont<3);
-        {
-            if (cont==3)
-            {
-                printf("Numero De Intentos Agotados :(");
-            }
-            
-        }
+           while (arti=0)
+           {
+            printf("¿Cuantos Articulos Llevas?");
+            scanf("%i",&arti);
+            printf("ingresa su precio");
+            scanf("%i",&precio);
+            total = arti*precio;
+            printf("TOTAL A PAGAR: %i",total);
+           }
+
+        
+
         return 0;
+
+    }
 }
