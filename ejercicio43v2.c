@@ -17,15 +17,18 @@ int main()
         {
             printf("BIENVENIDO AL SISTEMA\n");
         }
-           while (arti=0)
-           {
+           
             printf("¿Cuantos Articulos Llevas?");
             scanf("%i",&arti);
+            if (arti>0)
+            {
             printf("ingresa su precio");
             scanf("%i",&precio);
             total = arti*precio;
             printf("TOTAL A PAGAR: %i",total);
-           }
+            }
+            
+            
 
         
 

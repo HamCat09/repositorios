@@ -1,6 +1,6 @@
 int main()
 {
-    int contr,list,cont,intentos,arti,precio,total;
+    int contr,list,cont,intentos,arti,precio,total,i;
     char am[50];
         while (contr<=3 || contr==0)
         {
@@ -42,4 +42,3 @@ int main()
             }
             return 0;
         }
-        
